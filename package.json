@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Elm Singapore App",
   "scripts": {
-    "elm-analyse": "elm-analyse",
-    "elm-packages": "elm-package install --yes",
+    "analyse": "elm-analyse",
+    "postinstall": "elm-package install --yes",
+    "start": "elm-app start",
     "test": "elm-app test",
-    "elm-build": "elm-app build"
+    "build": "elm-app build"
   },
   "repository": {
     "type": "git",
