@@ -20,14 +20,12 @@ Request access to this repo by adding a comment to [this issue](#1)
 git clone git@github.com:elm-singapore/custard-loaf.git
 cd custard-loaf
 npm install
-export PATH=$(pwd)/node_modules/.bin
-# or set PATH=%cd%\node_modules\.bin;%PATH%
 ```
 
 ## Start dev server
 
 ```
-elm-app start
+npm start
 ```
 Will open browser tab with app and hot reload when you edit source files.
 
@@ -35,8 +33,8 @@ Will open browser tab with app and hot reload when you edit source files.
 ## Run tests and validations
 
 ```
-elm-app test
-elm-analyse
+npm test
+npm run analyse
 ```
 
 ## Workflow

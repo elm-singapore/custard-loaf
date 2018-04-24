@@ -33,12 +33,12 @@ install:
   - npm install
 
 script:
-  - sysconfcpus -n 2 npm run elm-packages --silent
-  - sysconfcpus -n 2 npm run test --silent
-  - sysconfcpus -n 2 npm run elm-analyse --silent
+  - sysconfcpus -n 2 npm install --silent
+  - sysconfcpus -n 2 npm test --silent
+  - sysconfcpus -n 2 npm run analyse --silent
 
 after_success:
-  - sysconfcpus -n 2 npm run elm-build --silent
+  - sysconfcpus -n 2 npm run build --silent
 
 deploy:
   provider: surge
