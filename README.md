@@ -20,7 +20,7 @@ Request access to this repo by adding a comment to [this issue](#1)
 git clone git@github.com:elm-singapore/custard-loaf.git
 cd custard-loaf
 npm install
-export PATH=$(pwd)/node_modules/.bin
+export PATH=$(pwd)/node_modules/.bin:$PATH
 # or set PATH=%cd%\node_modules\.bin;%PATH%
 ```
 
